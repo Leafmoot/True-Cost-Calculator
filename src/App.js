@@ -1533,7 +1533,7 @@ export default function App() {
               borderTop: `1px solid ${T.border}`,
               background: T.surface,
               display: "flex",
-              gap: 6,
+              gap: 4,
             }}
             className="no-print"
           >
@@ -1556,7 +1556,7 @@ export default function App() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: 6,
+                gap: 4,
               }}
               onMouseOver={(e) =>
                 (e.currentTarget.style.background = isDirty
@@ -1758,11 +1758,11 @@ export default function App() {
                       {(result.preTaxContribution > 0 && result.rothContribution > 0) && (
                         <div style={{ 
                           minWidth: 95,
-                          paddingLeft: 12,
+                          paddingLeft: 8,
                           borderLeft: `1px solid ${T.border}`,
                           display: "flex",
                           flexDirection: "column",
-                          gap: 6,
+                          gap: 4,
                         }}>
                           <div style={{ 
                             display: "flex", 
@@ -1852,11 +1852,11 @@ export default function App() {
                       {(result.preTaxContribution > 0 && result.rothContribution > 0) && (
                         <div style={{ 
                           minWidth: 95,
-                          paddingLeft: 12,
+                          paddingLeft: 8,
                           borderLeft: `1px solid ${T.border}`,
                           display: "flex",
                           flexDirection: "column",
-                          gap: 6,
+                          gap: 4,
                         }}>
                           <div style={{ 
                             display: "flex", 
@@ -1946,11 +1946,11 @@ export default function App() {
                       {(result.preTaxContribution > 0 && result.rothContribution > 0) && (
                         <div style={{ 
                           minWidth: 95,
-                          paddingLeft: 12,
+                          paddingLeft: 8,
                           borderLeft: `1px solid ${T.border}`,
                           display: "flex",
                           flexDirection: "column",
-                          gap: 6,
+                          gap: 4,
                         }}>
                           <div style={{ 
                             display: "flex", 
