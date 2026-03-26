@@ -291,7 +291,7 @@ function InfoTooltip({ text }) {
               color: T.surface,
               padding: "8px 10px",
               borderRadius: T.radius,
-              fontSize: "0.72rem",
+              fontSize: "0.68rem",
               fontFamily: T.font,
               lineHeight: 1.5,
               width: isMobile ? "calc(100vw - 48px)" : "220px",
@@ -353,7 +353,7 @@ function FieldErr({ msg }) {
       style={{
         display: "flex",
         alignItems: "center",
-        gap: 4,
+        gap: 3,
         marginTop: 4,
         fontSize: "0.74rem",
         color: T.red,
@@ -488,7 +488,7 @@ function Select({ value, onChange, options }) {
           width: "100%",
           boxSizing: "border-box",
           padding: "9px 12px",
-          fontSize: "0.72rem",
+          fontSize: "0.68rem",
           fontFamily: T.font,
           color: T.text,
           fontWeight: 400,
@@ -615,7 +615,7 @@ function TogglePair({ options, value, onChange, err }) {
               flex: 1,
               padding: "9px 8px",
               cursor: "pointer",
-              fontSize: "0.72rem",
+              fontSize: "0.68rem",
               fontWeight: sel ? 600 : 400,
               fontFamily: T.font,
               border: `1.5px solid ${sel ? T.btn : err ? T.red : T.border}`,
@@ -677,7 +677,7 @@ function SummaryLine({ label, value, color, bold, indent, dimmed }) {
     >
       <span
         style={{
-          fontSize: "0.72rem",
+          fontSize: "0.68rem",
           fontFamily: T.font,
           color: dimmed ? T.textMuted : T.textSub,
           paddingLeft: indent ? 12 : 0,
@@ -731,7 +731,7 @@ function StatCard({ label, value, sub, subLines, color, small }) {
             textTransform: "uppercase",
             color: "#64748B",
             fontFamily: T.font,
-            marginBottom: 10,
+            marginBottom: 8,
           }}
         >
           {label}
@@ -745,7 +745,7 @@ function StatCard({ label, value, sub, subLines, color, small }) {
             fontFamily: T.fontMono,
             letterSpacing: "-0.03em",
             fontVariantNumeric: "tabular-nums",
-            marginBottom: 6,
+            marginBottom: 4,
           }}
           className="mobile-text-sm"
         >
@@ -754,7 +754,7 @@ function StatCard({ label, value, sub, subLines, color, small }) {
         {sub && (
           <div
             style={{
-              fontSize: "0.72rem",
+              fontSize: "0.68rem",
               color: "#64748B",
               fontFamily: T.font,
               lineHeight: 1.5,
@@ -768,7 +768,7 @@ function StatCard({ label, value, sub, subLines, color, small }) {
             style={{
               display: "flex",
               flexDirection: "column",
-              gap: 4,
+              gap: 3,
               marginTop: sub ? 0 : 0,
             }}
           >
@@ -778,7 +778,7 @@ function StatCard({ label, value, sub, subLines, color, small }) {
                 <div
                   key={i}
                   style={{
-                    fontSize: "0.72rem",
+                    fontSize: "0.68rem",
                     color: "#64748B",
                     fontFamily: T.font,
                     lineHeight: 1.5,
@@ -803,7 +803,7 @@ function NoteBox({ color, bg, border, children }) {
         border: `1px solid ${border}`,
         borderRadius: T.radius,
         padding: "10px 12px",
-        fontSize: "0.72rem",
+        fontSize: "0.68rem",
         color,
         lineHeight: 1.55,
         fontFamily: T.font,
@@ -954,7 +954,7 @@ function EmptyResults({ isCalculating }) {
         {!isCalculating && (
           <div
             style={{
-              fontSize: "0.72rem",
+              fontSize: "0.68rem",
               color: T.textSub,
               fontFamily: T.font,
               textAlign: "center",
@@ -1420,7 +1420,7 @@ export default function App() {
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
                 gap: 10,
-                marginBottom: 10,
+                marginBottom: 8,
               }}
               className="mobile-stack"
             >
@@ -1481,7 +1481,7 @@ export default function App() {
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
                 gap: 10,
-                marginBottom: 10,
+                marginBottom: 8,
               }}
               className="mobile-stack"
             >
@@ -1533,7 +1533,7 @@ export default function App() {
               borderTop: `1px solid ${T.border}`,
               background: T.surface,
               display: "flex",
-              gap: 4,
+              gap: 3,
             }}
             className="no-print"
           >
@@ -1556,7 +1556,7 @@ export default function App() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: 4,
+                gap: 3,
               }}
               onMouseOver={(e) =>
                 (e.currentTarget.style.background = isDirty
@@ -1600,7 +1600,7 @@ export default function App() {
                 color: T.textSub,
                 border: `1.5px solid ${T.border}`,
                 borderRadius: T.radius,
-                fontSize: "0.72rem",
+                fontSize: "0.68rem",
                 fontWeight: 600,
                 fontFamily: T.font,
                 cursor: "pointer",
@@ -1705,7 +1705,7 @@ export default function App() {
                       background: "#FFFFFF",
                       borderRadius: "8px",
                       border: "1px solid #E5E7EB",
-                      padding: "16px 18px",
+                      padding: "12px 14px",
                       display: "flex",
                       flexDirection: "column",
                       boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
@@ -1720,7 +1720,7 @@ export default function App() {
                         textTransform: "uppercase",
                         color: "#64748B",
                         fontFamily: T.font,
-                        marginBottom: 10,
+                        marginBottom: 8,
                         textAlign: "center",
                       }}
                     >
@@ -1730,14 +1730,14 @@ export default function App() {
                       <div style={{ minWidth: 0, textAlign: "center" }}>
                         <div
                           style={{
-                            fontSize: "2.2rem",
+                            fontSize: "1.9rem",
                             fontWeight: 600,
                             color: "#1E293B",
                             lineHeight: 1,
                             fontFamily: T.font,
                             letterSpacing: "-0.03em",
                             fontVariantNumeric: "tabular-nums",
-                            marginBottom: 6,
+                            marginBottom: 4,
                           }}
                           className="mobile-text-sm"
                         >
@@ -1745,7 +1745,7 @@ export default function App() {
                         </div>
                         <div
                           style={{
-                            fontSize: "0.72rem",
+                            fontSize: "0.68rem",
                             color: "#64748B",
                             fontFamily: T.font,
                             lineHeight: 1.5,
@@ -1757,17 +1757,17 @@ export default function App() {
                       {/* Breakdown - Right Side on Desktop */}
                       {(result.preTaxContribution > 0 && result.rothContribution > 0) && (
                         <div style={{ 
-                          minWidth: 95,
-                          paddingLeft: 8,
+                          minWidth: 85,
+                          paddingLeft: 6,
                           borderLeft: `1px solid ${T.border}`,
                           display: "flex",
                           flexDirection: "column",
-                          gap: 4,
+                          gap: 3,
                         }}>
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.72rem", 
+                            fontSize: "0.68rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1779,7 +1779,7 @@ export default function App() {
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.72rem", 
+                            fontSize: "0.68rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1799,7 +1799,7 @@ export default function App() {
                       background: "#FFFFFF",
                       borderRadius: "8px",
                       border: "1px solid #E5E7EB",
-                      padding: "16px 18px",
+                      padding: "12px 14px",
                       display: "flex",
                       flexDirection: "column",
                       boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
@@ -1814,7 +1814,7 @@ export default function App() {
                         textTransform: "uppercase",
                         color: "#64748B",
                         fontFamily: T.font,
-                        marginBottom: 10,
+                        marginBottom: 8,
                         textAlign: "center",
                       }}
                     >
@@ -1824,14 +1824,14 @@ export default function App() {
                       <div style={{ minWidth: 0, textAlign: "center" }}>
                         <div
                           style={{
-                            fontSize: "2.2rem",
+                            fontSize: "1.9rem",
                             fontWeight: 600,
                             color: T.total,
                             lineHeight: 1,
                             fontFamily: T.font,
                             letterSpacing: "-0.03em",
                             fontVariantNumeric: "tabular-nums",
-                            marginBottom: 6,
+                            marginBottom: 4,
                           }}
                           className="mobile-text-sm"
                         >
@@ -1839,7 +1839,7 @@ export default function App() {
                         </div>
                         <div
                           style={{
-                            fontSize: "0.72rem",
+                            fontSize: "0.68rem",
                             color: "#64748B",
                             fontFamily: T.font,
                             lineHeight: 1.5,
@@ -1851,17 +1851,17 @@ export default function App() {
                       {/* Breakdown - Right Side on Desktop */}
                       {(result.preTaxContribution > 0 && result.rothContribution > 0) && (
                         <div style={{ 
-                          minWidth: 95,
-                          paddingLeft: 8,
+                          minWidth: 85,
+                          paddingLeft: 6,
                           borderLeft: `1px solid ${T.border}`,
                           display: "flex",
                           flexDirection: "column",
-                          gap: 4,
+                          gap: 3,
                         }}>
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.72rem", 
+                            fontSize: "0.68rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1873,7 +1873,7 @@ export default function App() {
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.72rem", 
+                            fontSize: "0.68rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1893,7 +1893,7 @@ export default function App() {
                       background: "#FFFFFF",
                       borderRadius: "8px",
                       border: "1px solid #E5E7EB",
-                      padding: "16px 18px",
+                      padding: "12px 14px",
                       display: "flex",
                       flexDirection: "column",
                       boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
@@ -1908,7 +1908,7 @@ export default function App() {
                         textTransform: "uppercase",
                         color: "#64748B",
                         fontFamily: T.font,
-                        marginBottom: 10,
+                        marginBottom: 8,
                         textAlign: "center",
                       }}
                     >
@@ -1918,14 +1918,14 @@ export default function App() {
                       <div style={{ minWidth: 0, textAlign: "center" }}>
                         <div
                           style={{
-                            fontSize: "2.2rem",
+                            fontSize: "1.9rem",
                             fontWeight: 600,
                             color: T.green,
                             lineHeight: 1,
                             fontFamily: T.font,
                             letterSpacing: "-0.03em",
                             fontVariantNumeric: "tabular-nums",
-                            marginBottom: 6,
+                            marginBottom: 4,
                           }}
                           className="mobile-text-sm"
                         >
@@ -1933,7 +1933,7 @@ export default function App() {
                         </div>
                         <div
                           style={{
-                            fontSize: "0.72rem",
+                            fontSize: "0.68rem",
                             color: "#64748B",
                             fontFamily: T.font,
                             lineHeight: 1.5,
@@ -1945,17 +1945,17 @@ export default function App() {
                       {/* Breakdown - Right Side on Desktop */}
                       {(result.preTaxContribution > 0 && result.rothContribution > 0) && (
                         <div style={{ 
-                          minWidth: 95,
-                          paddingLeft: 8,
+                          minWidth: 85,
+                          paddingLeft: 6,
                           borderLeft: `1px solid ${T.border}`,
                           display: "flex",
                           flexDirection: "column",
-                          gap: 4,
+                          gap: 3,
                         }}>
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.72rem", 
+                            fontSize: "0.68rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1967,7 +1967,7 @@ export default function App() {
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.72rem", 
+                            fontSize: "0.68rem", 
                             color: T.textMuted, 
                             fontFamily: T.font 
                           }}>
@@ -1998,7 +1998,7 @@ export default function App() {
                     style={{
                       padding: "12px 14px",
                       cursor: "pointer",
-                      fontSize: "0.72rem",
+                      fontSize: "0.68rem",
                       fontWeight: 700,
                       color: T.text,
                       fontFamily: T.font,
@@ -2032,14 +2032,14 @@ export default function App() {
                       <>
                         <div
                           style={{
-                            fontSize: "0.72rem",
+                            fontSize: "0.68rem",
                             fontWeight: 700,
                             letterSpacing: "0.05em",
                             textTransform: "uppercase",
                             color: T.textMuted,
                             fontFamily: T.font,
                             marginTop: 8,
-                            marginBottom: 6,
+                            marginBottom: 4,
                           }}
                         >
                           Pre-Tax
@@ -2065,14 +2065,14 @@ export default function App() {
                       <>
                         <div
                           style={{
-                            fontSize: "0.72rem",
+                            fontSize: "0.68rem",
                             fontWeight: 700,
                             letterSpacing: "0.05em",
                             textTransform: "uppercase",
                             color: T.textMuted,
                             fontFamily: T.font,
                             marginTop: 12,
-                            marginBottom: 6,
+                            marginBottom: 4,
                           }}
                         >
                           Roth
@@ -2097,14 +2097,14 @@ export default function App() {
 
                     <div
                       style={{
-                        fontSize: "0.72rem",
+                        fontSize: "0.68rem",
                         fontWeight: 700,
                         letterSpacing: "0.05em",
                         textTransform: "uppercase",
                         color: T.textMuted,
                         fontFamily: T.font,
                         marginTop: 12,
-                        marginBottom: 6,
+                        marginBottom: 4,
                       }}
                     >
                       Combined
