@@ -291,7 +291,7 @@ function InfoTooltip({ text }) {
               color: T.surface,
               padding: "8px 10px",
               borderRadius: T.radius,
-              fontSize: "0.68rem",
+              fontSize: "0.8rem",
               fontFamily: T.font,
               lineHeight: 1.5,
               width: isMobile ? "calc(100vw - 48px)" : "220px",
@@ -353,7 +353,7 @@ function FieldErr({ msg }) {
       style={{
         display: "flex",
         alignItems: "center",
-        gap: 3,
+        gap: 6,
         marginTop: 4,
         fontSize: "0.74rem",
         color: T.red,
@@ -488,7 +488,7 @@ function Select({ value, onChange, options }) {
           width: "100%",
           boxSizing: "border-box",
           padding: "9px 12px",
-          fontSize: "0.68rem",
+          fontSize: "0.8rem",
           fontFamily: T.font,
           color: T.text,
           fontWeight: 400,
@@ -615,7 +615,7 @@ function TogglePair({ options, value, onChange, err }) {
               flex: 1,
               padding: "9px 8px",
               cursor: "pointer",
-              fontSize: "0.68rem",
+              fontSize: "0.8rem",
               fontWeight: sel ? 600 : 400,
               fontFamily: T.font,
               border: `1.5px solid ${sel ? T.btn : err ? T.red : T.border}`,
@@ -647,7 +647,7 @@ function Divider({ label }) {
       {label && (
         <span
           style={{
-            fontSize: "0.68rem",
+            fontSize: "0.8rem",
             fontWeight: 700,
             letterSpacing: "0.08em",
             textTransform: "uppercase",
@@ -677,7 +677,7 @@ function SummaryLine({ label, value, color, bold, indent, dimmed }) {
     >
       <span
         style={{
-          fontSize: "0.68rem",
+          fontSize: "0.78rem",
           fontFamily: T.font,
           color: dimmed ? T.textMuted : T.textSub,
           paddingLeft: indent ? 12 : 0,
@@ -690,7 +690,7 @@ function SummaryLine({ label, value, color, bold, indent, dimmed }) {
       <span
         style={{
           fontSize: bold ? "0.84rem" : "0.8rem",
-          fontFamily: T.fontMono,
+          fontFamily: T.font,
           fontWeight: bold ? 700 : 500,
           color: color || T.text,
           fontVariantNumeric: "tabular-nums",
@@ -725,13 +725,13 @@ function StatCard({ label, value, sub, subLines, color, small }) {
       <div style={{ width: "100%", textAlign: "center" }}>
         <div
           style={{
-            fontSize: "0.68rem",
+            fontSize: "0.8rem",
             fontWeight: 600,
             letterSpacing: "0.05em",
             textTransform: "uppercase",
             color: "#64748B",
             fontFamily: T.font,
-            marginBottom: 8,
+            marginBottom: 6,
           }}
         >
           {label}
@@ -742,7 +742,7 @@ function StatCard({ label, value, sub, subLines, color, small }) {
             fontWeight: 600,
             color: "#1E293B",
             lineHeight: 1,
-            fontFamily: T.fontMono,
+            fontFamily: T.font,
             letterSpacing: "-0.03em",
             fontVariantNumeric: "tabular-nums",
             marginBottom: 4,
@@ -754,7 +754,7 @@ function StatCard({ label, value, sub, subLines, color, small }) {
         {sub && (
           <div
             style={{
-              fontSize: "0.68rem",
+              fontSize: "0.8rem",
               color: "#64748B",
               fontFamily: T.font,
               lineHeight: 1.5,
@@ -768,7 +768,7 @@ function StatCard({ label, value, sub, subLines, color, small }) {
             style={{
               display: "flex",
               flexDirection: "column",
-              gap: 3,
+              gap: 6,
               marginTop: sub ? 0 : 0,
             }}
           >
@@ -778,7 +778,7 @@ function StatCard({ label, value, sub, subLines, color, small }) {
                 <div
                   key={i}
                   style={{
-                    fontSize: "0.68rem",
+                    fontSize: "0.8rem",
                     color: "#64748B",
                     fontFamily: T.font,
                     lineHeight: 1.5,
@@ -803,7 +803,7 @@ function NoteBox({ color, bg, border, children }) {
         border: `1px solid ${border}`,
         borderRadius: T.radius,
         padding: "10px 12px",
-        fontSize: "0.68rem",
+        fontSize: "0.8rem",
         color,
         lineHeight: 1.55,
         fontFamily: T.font,
@@ -822,7 +822,7 @@ function Badge({ children, color, bg }) {
         alignItems: "center",
         padding: "2px 8px",
         borderRadius: 99,
-        fontSize: "0.68rem",
+        fontSize: "0.8rem",
         fontWeight: 700,
         letterSpacing: "0.06em",
         textTransform: "uppercase",
@@ -954,7 +954,7 @@ function EmptyResults({ isCalculating }) {
         {!isCalculating && (
           <div
             style={{
-              fontSize: "0.68rem",
+              fontSize: "0.8rem",
               color: T.textSub,
               fontFamily: T.font,
               textAlign: "center",
@@ -1397,7 +1397,7 @@ export default function App() {
           >
             <span
               style={{
-                fontSize: "0.68rem",
+                fontSize: "0.8rem",
                 fontWeight: 700,
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",
@@ -1420,7 +1420,7 @@ export default function App() {
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
                 gap: 10,
-                marginBottom: 8,
+                marginBottom: 6,
               }}
               className="mobile-stack"
             >
@@ -1481,7 +1481,7 @@ export default function App() {
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
                 gap: 10,
-                marginBottom: 8,
+                marginBottom: 6,
               }}
               className="mobile-stack"
             >
@@ -1533,7 +1533,7 @@ export default function App() {
               borderTop: `1px solid ${T.border}`,
               background: T.surface,
               display: "flex",
-              gap: 3,
+              gap: 6,
             }}
             className="no-print"
           >
@@ -1556,7 +1556,7 @@ export default function App() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: 3,
+                gap: 6,
               }}
               onMouseOver={(e) =>
                 (e.currentTarget.style.background = isDirty
@@ -1600,7 +1600,7 @@ export default function App() {
                 color: T.textSub,
                 border: `1.5px solid ${T.border}`,
                 borderRadius: T.radius,
-                fontSize: "0.68rem",
+                fontSize: "0.8rem",
                 fontWeight: 600,
                 fontFamily: T.font,
                 cursor: "pointer",
@@ -1642,7 +1642,7 @@ export default function App() {
           >
             <span
               style={{
-                fontSize: "0.68rem",
+                fontSize: "0.8rem",
                 fontWeight: 700,
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",
@@ -1705,7 +1705,7 @@ export default function App() {
                       background: "#FFFFFF",
                       borderRadius: "8px",
                       border: "1px solid #E5E7EB",
-                      padding: "12px 14px",
+                      padding: "14px 16px",
                       display: "flex",
                       flexDirection: "column",
                       boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
@@ -1714,23 +1714,27 @@ export default function App() {
                   >
                     <div
                       style={{
-                        fontSize: "0.68rem",
+                        fontSize: "0.8rem",
                         fontWeight: 600,
                         letterSpacing: "0.05em",
                         textTransform: "uppercase",
                         color: "#64748B",
                         fontFamily: T.font,
-                        marginBottom: 8,
+                        marginBottom: 6,
                         textAlign: "center",
                       }}
                     >
-                      Total Contribution
+                      {result.preTaxContribution > 0 && result.rothContribution > 0
+                        ? "Total Contribution"
+                        : result.preTaxContribution > 0
+                        ? "Pre-Tax Contribution"
+                        : "Roth Contribution"}
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                      <div style={{ minWidth: 0, textAlign: "center" }}>
+                      <div style={{ flex: 1, textAlign: "center" }}>
                         <div
                           style={{
-                            fontSize: "1.9rem",
+                            fontSize: "2rem",
                             fontWeight: 600,
                             color: "#1E293B",
                             lineHeight: 1,
@@ -1745,7 +1749,7 @@ export default function App() {
                         </div>
                         <div
                           style={{
-                            fontSize: "0.68rem",
+                            fontSize: "0.8rem",
                             color: "#64748B",
                             fontFamily: T.font,
                             lineHeight: 1.5,
@@ -1757,17 +1761,17 @@ export default function App() {
                       {/* Breakdown - Right Side on Desktop */}
                       {(result.preTaxContribution > 0 && result.rothContribution > 0) && (
                         <div style={{ 
-                          minWidth: 85,
-                          paddingLeft: 6,
+                          minWidth: 80,
+                          paddingLeft: 10,
                           borderLeft: `1px solid ${T.border}`,
                           display: "flex",
                           flexDirection: "column",
-                          gap: 3,
+                          gap: 6,
                         }}>
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.68rem", 
+                            fontSize: "0.8rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1779,7 +1783,7 @@ export default function App() {
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.68rem", 
+                            fontSize: "0.8rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1799,7 +1803,7 @@ export default function App() {
                       background: "#FFFFFF",
                       borderRadius: "8px",
                       border: "1px solid #E5E7EB",
-                      padding: "12px 14px",
+                      padding: "14px 16px",
                       display: "flex",
                       flexDirection: "column",
                       boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
@@ -1808,25 +1812,25 @@ export default function App() {
                   >
                     <div
                       style={{
-                        fontSize: "0.68rem",
+                        fontSize: "0.8rem",
                         fontWeight: 600,
                         letterSpacing: "0.05em",
                         textTransform: "uppercase",
                         color: "#64748B",
                         fontFamily: T.font,
-                        marginBottom: 8,
+                        marginBottom: 6,
                         textAlign: "center",
                       }}
                     >
                       True Cost
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                      <div style={{ minWidth: 0, textAlign: "center" }}>
+                      <div style={{ flex: 1, textAlign: "center" }}>
                         <div
                           style={{
-                            fontSize: "1.9rem",
+                            fontSize: "2rem",
                             fontWeight: 600,
-                            color: T.total,
+                            color: "#1E293B",
                             lineHeight: 1,
                             fontFamily: T.font,
                             letterSpacing: "-0.03em",
@@ -1839,7 +1843,7 @@ export default function App() {
                         </div>
                         <div
                           style={{
-                            fontSize: "0.68rem",
+                            fontSize: "0.8rem",
                             color: "#64748B",
                             fontFamily: T.font,
                             lineHeight: 1.5,
@@ -1851,17 +1855,17 @@ export default function App() {
                       {/* Breakdown - Right Side on Desktop */}
                       {(result.preTaxContribution > 0 && result.rothContribution > 0) && (
                         <div style={{ 
-                          minWidth: 85,
-                          paddingLeft: 6,
+                          minWidth: 80,
+                          paddingLeft: 10,
                           borderLeft: `1px solid ${T.border}`,
                           display: "flex",
                           flexDirection: "column",
-                          gap: 3,
+                          gap: 6,
                         }}>
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.68rem", 
+                            fontSize: "0.8rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1873,7 +1877,7 @@ export default function App() {
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.68rem", 
+                            fontSize: "0.8rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1893,7 +1897,7 @@ export default function App() {
                       background: "#FFFFFF",
                       borderRadius: "8px",
                       border: "1px solid #E5E7EB",
-                      padding: "12px 14px",
+                      padding: "14px 16px",
                       display: "flex",
                       flexDirection: "column",
                       boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
@@ -1902,23 +1906,23 @@ export default function App() {
                   >
                     <div
                       style={{
-                        fontSize: "0.68rem",
+                        fontSize: "0.8rem",
                         fontWeight: 600,
                         letterSpacing: "0.05em",
                         textTransform: "uppercase",
                         color: "#64748B",
                         fontFamily: T.font,
-                        marginBottom: 8,
+                        marginBottom: 6,
                         textAlign: "center",
                       }}
                     >
                       Tax Savings
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                      <div style={{ minWidth: 0, textAlign: "center" }}>
+                      <div style={{ flex: 1, textAlign: "center" }}>
                         <div
                           style={{
-                            fontSize: "1.9rem",
+                            fontSize: "2rem",
                             fontWeight: 600,
                             color: T.green,
                             lineHeight: 1,
@@ -1933,7 +1937,7 @@ export default function App() {
                         </div>
                         <div
                           style={{
-                            fontSize: "0.68rem",
+                            fontSize: "0.8rem",
                             color: "#64748B",
                             fontFamily: T.font,
                             lineHeight: 1.5,
@@ -1945,17 +1949,17 @@ export default function App() {
                       {/* Breakdown - Right Side on Desktop */}
                       {(result.preTaxContribution > 0 && result.rothContribution > 0) && (
                         <div style={{ 
-                          minWidth: 85,
-                          paddingLeft: 6,
+                          minWidth: 80,
+                          paddingLeft: 10,
                           borderLeft: `1px solid ${T.border}`,
                           display: "flex",
                           flexDirection: "column",
-                          gap: 3,
+                          gap: 6,
                         }}>
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.68rem", 
+                            fontSize: "0.8rem", 
                             color: T.textSub, 
                             fontFamily: T.font 
                           }}>
@@ -1967,7 +1971,7 @@ export default function App() {
                           <div style={{ 
                             display: "flex", 
                             justifyContent: "space-between",
-                            fontSize: "0.68rem", 
+                            fontSize: "0.8rem", 
                             color: T.textMuted, 
                             fontFamily: T.font 
                           }}>
@@ -1996,9 +2000,9 @@ export default function App() {
                 >
                   <summary
                     style={{
-                      padding: "12px 14px",
+                      padding: "14px 16px",
                       cursor: "pointer",
-                      fontSize: "0.68rem",
+                      fontSize: "0.8rem",
                       fontWeight: 700,
                       color: T.text,
                       fontFamily: T.font,
@@ -2032,7 +2036,7 @@ export default function App() {
                       <>
                         <div
                           style={{
-                            fontSize: "0.68rem",
+                            fontSize: "0.8rem",
                             fontWeight: 700,
                             letterSpacing: "0.05em",
                             textTransform: "uppercase",
@@ -2065,7 +2069,7 @@ export default function App() {
                       <>
                         <div
                           style={{
-                            fontSize: "0.68rem",
+                            fontSize: "0.8rem",
                             fontWeight: 700,
                             letterSpacing: "0.05em",
                             textTransform: "uppercase",
@@ -2097,7 +2101,7 @@ export default function App() {
 
                     <div
                       style={{
-                        fontSize: "0.68rem",
+                        fontSize: "0.8rem",
                         fontWeight: 700,
                         letterSpacing: "0.05em",
                         textTransform: "uppercase",
